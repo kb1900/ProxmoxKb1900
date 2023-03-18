@@ -131,8 +131,8 @@ function exit-script() {
 
 function advanced_settings() {
 if CT_TYPE=$(whiptail --title "CONTAINER TYPE" --radiolist "Choose Type" 10 58 2 \
-    "1" "Unprivileged" ON \
-    "0" "Privileged" OFF \
+    "1" "Unprivileged" OFF \
+    "0" "Privileged" ON \
     3>&1 1>&2 2>&3); then
     echo -e "${DGN}Using Container Type: ${BGN}$CT_TYPE${CL}"
 else
